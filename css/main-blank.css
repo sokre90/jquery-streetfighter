@@ -62,3 +62,22 @@ body {
 	z-index: 10;
 }
 
+.text-content  {
+	position: absolute;
+    left: 650px;
+    height: 425px;
+    width: 600px;
+    padding-top: 75px;
+    font-family: 'Bitter', serif;
+}
+p {
+	width: 50%;
+	font-size: 24px;
+	line-height: 45px;
+	margin: 0;
+    border: 0;
+}
+p + p {
+	margin-left: 275px;
+}
+
