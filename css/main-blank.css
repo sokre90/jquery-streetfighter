@@ -1,3 +1,11 @@
+@font-face {
+	font-family: comical;
+	src: url('../fonts/animeace2_reg.otf');
+}
+*:focus {
+outline: 0;
+outline: none;
+}
 body {
 	background-color: black;
 }
@@ -68,7 +76,9 @@ body {
     height: 425px;
     width: 600px;
     padding-top: 75px;
-    font-family: 'Bitter', serif;
+/*    font-family: 'Bitter', serif;
+*/
+	font-family: comical; 
 }
 p {
 	width: 50%;
