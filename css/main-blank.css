@@ -75,7 +75,8 @@ body {
     left: 650px;
     height: 425px;
     width: 600px;
-    padding-top: 75px; 
+    padding-top: 75px;
+    font-family: comical; 
 }
 p {
 	width: 50%;
