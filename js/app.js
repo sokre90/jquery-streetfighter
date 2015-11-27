@@ -45,6 +45,10 @@ $(document).ready(function() {
 		// $('#cool-sound')[0].load();
 		$('#cool-sound')[0].play();
 	}
+	// function playStreetFighter() {
+	// 	$('#sf-theme')[0].volume = 0.5
+	// 	$('#sf-theme')[0].load();
+	// 	$('#sf-theme')[0].play();
 $(document).keydown(function(e) {
 		if(e.keyCode == 88) {
 			playCool();
@@ -62,3 +66,23 @@ $(document).keyup(function(e) {
 			$('ryu-ready').hide();
 		}
 	});
+function doIntro() {
+	$('#sf-theme')[0].volume = 0.3;
+	$('#sf-theme')[0].play();
+	$('.sf-logo').fadeIn(3500, function() {
+		$(this).fadeOut(1000. function() {
+			$('.brought-by').fadeIn(1500, function() {
+				$(this).fadeOut(1000, function() {
+					$('.jquery-logo').fadeIn(1500, function() {
+						$(this).fadeOut(1500, function() {
+							$('.how-to').fadeIn(1000);
+						});
+					})
+				})
+			})
+		})
+	})
+}
+$(document).ready(function() {
+	doIntro();
+});

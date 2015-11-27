@@ -75,10 +75,7 @@ body {
     left: 650px;
     height: 425px;
     width: 600px;
-    padding-top: 75px;
-/*    font-family: 'Bitter', serif;
-*/
-	font-family: comical; 
+    padding-top: 75px; 
 }
 p {
 	width: 50%;
@@ -90,4 +87,26 @@ p {
 p + p {
 	margin-left: 275px;
 }
-
+.brought-by {
+	display: none;
+	text-align: center;
+	margin-top: 100px;
+	color: red;
+	font-size: 50px;
+	width: 600px;
+}
+.sf-logo {
+	display: none;
+	background-image: url('../images/sf-logo.png');
+	width: 682px;
+	height: 314px;
+}
+.jquery-logo {
+	display: none;
+	background-image: url('../images/jquery-logo.png');
+	width: 500px;
+	height: 172px;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
