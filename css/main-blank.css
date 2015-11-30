@@ -78,15 +78,17 @@ body {
     padding-top: 75px;
     font-family: comical; 
 }
-p {
+.how-to {
+	display: none;
 	width: 50%;
 	font-size: 24px;
 	line-height: 45px;
 	margin: 0;
     border: 0;
 }
-p + p {
+.how-to > p + p {
 	margin-left: 275px;
+	width: 308px;
 }
 .brought-by {
 	display: none;
