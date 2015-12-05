@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
 	doIntro();
 });
@@ -39,12 +38,12 @@ $(document).ready(function() {
 
 });
 
-	function playHadouken () {
+	function playHadouken() {
 		$('#hadouken-sound')[0].volume = 0.5
 		$('#hadouken-sound')[0].load();
 		$('#hadouken-sound')[0].play();
 	}
-	function playCool () {
+	function playCool() {
 		$('#cool-sound')[0].volume = 0.5
 		// $('#cool-sound')[0].load();
 		$('#cool-sound')[0].play();
@@ -57,6 +56,7 @@ $(document).ready(function() {
 $(document).keydown(function(e) {
 		if(e.keyCode == 88) {
 			playCool();
+			$('#sf-theme')[0].pause();
 			$('.ryu-still').hide();
 			$('.ryu-ready').hide();
 			$('.ryu-cool').show();
@@ -66,6 +66,7 @@ $(document).keyup(function(e) {
 		if(e.keyCode == 88) {
 			$('#cool-sound')[0].pause();
 			$('#cool-sound')[0].load();
+			$('#sf-theme')[0].play();
 			$('.ryu-still').show();
 			$('.ryu-cool').hide();
 			$('.ryu-ready').hide();
@@ -88,4 +89,6 @@ function doIntro() {
       })
     })
   })
+ setTimeout(function() {
+ 	$('#sf-theme')[0].pause();}, 60000);
 }
